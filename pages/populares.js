@@ -3,9 +3,8 @@ import Layout from '../components/layout/Layout';
 import ProductDetails from '../components/layout/ProductDetails';
 import useProducts from '../hooks/useProducts';
 
-export default function Home() {
-  const {products} = useProducts('create');
-
+export default function Populares() {
+  const {products} = useProducts('votes');
   return (
     <div>
       <Layout>
